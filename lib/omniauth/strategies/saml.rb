@@ -217,7 +217,6 @@ module OmniAuth
       end
 
       def with_settings
-        options[:assertion_consumer_service_url] ||= callback_url
         yield OneLogin::RubySaml::Settings.new(options)
       end
 
